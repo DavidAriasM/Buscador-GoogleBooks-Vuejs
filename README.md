@@ -1,19 +1,19 @@
-# app-libros-vue2
+# Buscador - API GoogleBooks
 
-## Project setup
+## Instalación de Proyecto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compila y recarga desarrollo
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compila para producción
 ```
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Personaliza configuración
+Ver [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <div class="item">
-            <a href="https://github.com/DavidAriasM" target="_blank">
+            <a href="https://github.com/DavidAriasM/Buscador-GoogleBooks-Vuejs" target="_blank">
                 <font-awesome-icon :icon="['fab', 'github']" size="2x"/>
             </a>
             <a href="https://www.linkedin.com/in/david-arias-maulen-58432692/" target="_blank">

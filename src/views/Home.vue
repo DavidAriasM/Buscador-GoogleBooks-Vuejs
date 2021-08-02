@@ -4,7 +4,6 @@
     <form @submit.prevent="realizarBusqueda">
       <div>
         <input class="input-buscar" type="text" :placeholder="placeholder" v-model="busqueda" required>       
-            <!--<input type="radio" name="autor" id="autor" @click="checkFiltro"><em>Autor</em>-->
         <button class="btn-buscar" type="submit" :disabled="!busqueda">Buscar <font-awesome-icon :icon="['fas', 'search']"/></button><br>
         <small>Filtrar por: </small>
         <select class="filtro" v-model="criterioBusqueda" @change="realizarBusqueda">
@@ -41,20 +40,17 @@ export default {
   },
   methods:{
     checkFiltro(){
-      //this.estadoCheck = !this.estadoCheck;
       this.placeholder === 'Buscar por Titulo' ? this.placeholder = 'Buscar por Autor': this.placeholder = 'Buscar por Titulo'
     },
     async realizarBusqueda(){
             try {
-                //this.estadoCheck === false ? this.criterioBusqueda = 'intitle' : this.criterioBusqueda = 'inauthor'
 
                 const res = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${this.criterioBusqueda}:${this.busqueda}`);
 
                 const data = await res.json();
-                //console.log(data.items);
                 this.libros = data.items;
                 this.criterio = this.busqueda;
-                //this.busqueda= '';
+                this.busqueda= '';
             } catch (error) {
                 console.log(error);
             }
