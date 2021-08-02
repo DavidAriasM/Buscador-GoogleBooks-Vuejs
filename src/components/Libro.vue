@@ -20,7 +20,7 @@
                 <span v-else>
                     Por 
                     <span v-for="(autor, index) in libro.volumeInfo.authors" :key="index">
-                        <em>
+                        <em class="autores">
                             {{ index + 1 !== libro.volumeInfo.authors.length && index + 1 !== libro.volumeInfo.authors.length-1 ? autor + ', ' : index + 1 == libro.volumeInfo.authors.length && index+1 !== 1 ? ' y ' + autor : autor }}
                         </em>
                     </span>
@@ -81,6 +81,7 @@ export default {
 .img-seccion{
     display: flex;
 }
+
 .ebook{
     width: 50px;
     height: 20px;

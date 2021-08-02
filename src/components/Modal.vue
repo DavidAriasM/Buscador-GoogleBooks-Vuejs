@@ -98,6 +98,13 @@ export default {
     overflow: auto;
 }
 
+h1{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .detalle{
     display: flex;
     justify-content: space-around;
