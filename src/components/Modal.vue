@@ -222,7 +222,16 @@ h1{
         max-width: 100%;
         margin-top: 5px;
     }
+
 }
+
+@media (max-width:500px){
+    .modal{
+        width: 80%;
+    }
+}
+
+
 @media(max-width:350px){
 
     .ficha-tecnica, .sinopsis{
