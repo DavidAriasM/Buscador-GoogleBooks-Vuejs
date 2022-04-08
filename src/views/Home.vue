@@ -31,7 +31,7 @@ export default {
   data() {
     return {
       libros: [],
-      busqueda: 'Sebastian Fitzek',
+      busqueda: '',
       criterio: '',
       estadoCheck: false,
       criterioBusqueda: 'intitle',
